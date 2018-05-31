@@ -1,5 +1,4 @@
 #!/bin/bash
-# UsnekxPHC
 clear
 echo "                                           "
 echo "                                           "
