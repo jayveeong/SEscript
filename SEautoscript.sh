@@ -125,9 +125,9 @@ echo '# Configuration file for dnsmasq.
 # Include all files in a directory which end in .conf
 #conf-dir=/etc/dnsmasq.d/,*.conf
 
-interface=tap_tapvpn
-dhcp-range=tap_tapvpn,192.168.7.50,192.168.7.60,12h
-dhcp-option=tap_tapvpn,3,192.168.7.1
+interface=tap_soft
+dhcp-range=tap_soft,192.168.7.50,192.168.7.60,12h
+dhcp-option=tap_soft,3,192.168.7.1
 port=0 
 dhcp-option=option:dns-server,208.67.222.222,208.67.220.220' > /etc/dnsmasq.conf
 ###
