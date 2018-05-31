@@ -3,7 +3,9 @@
 # Prerequisites.
 
 Virtual Private Server
+
 Ubuntu 16.04 x64 or Debian 8.10 x64
+
 Root privilege
 
 # Input this code and wait to finish.
