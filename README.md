@@ -32,9 +32,13 @@ nano /etc/dnsmasq.conf
 # Edit /etc/dnsmasq.conf and add these lines at the end :
 
 interface=tap_tapvpn
+
 dhcp-range=tap_tapvpn,192.168.7.50,192.168.7.60,12h
+
 dhcp-option=tap_tapvpn,3,192.168.7.1
+
 port=0 
+
 dhcp-option=option:dns-server,208.67.222.222,208.67.220.220
 
 # Add the file ipv4_forwarding.conf in the directory /etc/sysctl.d/ with the line net.ipv4.ip_forward = 1, just copy and paste the below line, it will create the file automatically :
