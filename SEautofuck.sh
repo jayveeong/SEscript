@@ -28,6 +28,7 @@ echo "                                           "
 echo "               AUTO SCRIPT                 "
 echo "                                           "
 echo " "
+
 HOST=""
 SERVER_PASSWORD=""
 USER=""
@@ -55,7 +56,6 @@ echo " "
 
 sudo apt-get -y update && sudo apt-get -y upgrade && apt-get install expect -y
 sudo apt-get install checkinstall build-essential -y
-apt-get install dnsmasq
 wget http://www.softether-download.com/files/softether/v4.27-9666-beta-2018.04.21-tree/Linux/SoftEther_VPN_Server/64bit_-_Intel_x64_or_AMD64/softether-vpnserver-v4.27-9666-beta-2018.04.21-linux-x64-64bit.tar.gz
 tar -xzf softether-vpnserver-v4.27-9666-beta-2018.04.21-linux-x64-64bit.tar.gz
 rm -rf softether-vpnserver-v4.27-9666-beta-2018.04.21-linux-x64-64bit.tar.gz
@@ -98,45 +98,12 @@ exit 0' > /etc/init.d/vpnserver
 chmod 755 /etc/init.d/vpnserver && /etc/init.d/vpnserver start
 update-rc.d vpnserver defaults
 ###
-echo '# Configuration file for dnsmasq.
-#
-# Format is one option per line, legal options are the same
-# as the long options legal on the command line. See
-# "/usr/sbin/dnsmasq --help" or "man 8 dnsmasq" for details.
-
-# Listen on this specific port instead of the standard DNS port
-# (53). Setting this to zero completely disables DNS function,
-# leaving only DHCP and/or TFTP.
-#port=5353
-# For debugging purposes, log each DNS query as it passes through
-# dnsmasq.
-#log-queries
-
-# Log lots of extra information about DHCP transactions.
-#log-dhcp
-
-# Include another lot of configuration options.
-#conf-file=/etc/dnsmasq.more.conf
-#conf-dir=/etc/dnsmasq.d
-
-# Include all the files in a directory except those ending in .bak
-#conf-dir=/etc/dnsmasq.d,.bak
-
-# Include all files in a directory which end in .conf
-#conf-dir=/etc/dnsmasq.d/,*.conf
-
-interface=tap_soft
-dhcp-range=tap_soft,192.168.7.50,192.168.7.60,12h
-dhcp-option=tap_soft,3,192.168.7.1
-port=0 
-dhcp-option=option:dns-server,208.67.222.222,208.67.220.220' > /etc/dnsmasq.conf
-###
 echo net.ipv4.ip_forward = 1 >> /etc/sysctl.conf
-echo 'net.ipv4.ip_forward = 1' > /etc/sysctl.d/ipv4_forwarding.conf
 sysctl -w net.ipv4.ip_forward=1
 sysctl --system
 echo "nameserver 8.8.8.8" > "/etc/resolv.conf"
 echo "nameserver 8.8.4.4" >> "/etc/resolv.conf"
+
 ### SSH brute-force protection ### 
 iptables -A INPUT -p tcp --dport ssh -m conntrack --ctstate NEW -m recent --set 
 iptables -A INPUT -p tcp --dport ssh -m conntrack --ctstate NEW -m recent --update --seconds 60 --hitcount 10 -j DROP  
