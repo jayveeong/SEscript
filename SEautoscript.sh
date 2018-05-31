@@ -1,4 +1,5 @@
 #!/bin/bash
+# UsnekxPHC
 clear
 echo "                                           "
 echo "                                           "
@@ -95,6 +96,9 @@ exit 1
 esac
 exit 0' > /etc/init.d/vpnserver
 ###
+chmod 755 /etc/init.d/vpnserver && /etc/init.d/vpnserver start
+update-rc.d vpnserver defaults
+###
 echo '# Configuration file for dnsmasq.
 #
 # Format is one option per line, legal options are the same
@@ -127,8 +131,6 @@ dhcp-range=tap_tapvpn,192.168.7.50,192.168.7.60,12h
 dhcp-option=tap_tapvpn,3,192.168.7.1
 port=0 
 dhcp-option=option:dns-server,208.67.222.222,208.67.220.220' > /etc/dnsmasq.conf
-chmod 755 /etc/init.d/vpnserver && /etc/init.d/vpnserver start
-update-rc.d vpnserver defaults
 ###
 echo net.ipv4.ip_forward = 1 >> /etc/sysctl.conf
 echo 'net.ipv4.ip_forward = 1' > /etc/sysctl.d/ipv4_forwarding.conf
