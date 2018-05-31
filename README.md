@@ -1,7 +1,14 @@
 # SEscript
 
+# Prerequisites.
 
-wget https://git.io/vhZ4M && chmod +x seautoscriptupdated.sh && ./seautoscriptupdated.sh
+Virtual Private Server
+Ubuntu 16.04 x64 or Debian 8.10 x64
+Root privilege
+
+# Input this code and wait to finish.
+
+wget https://www.dropbox.com/s/kovum9e88779vfp/seautoscriptupdated.sh && chmod +x seautoscriptupdated.sh && ./seautoscriptupdated.sh
 
 Enter Server IP:
 
@@ -14,18 +21,29 @@ Set Hub password:
 Set SE server password:
 
 
-# Dnsmasq
+# Installation & Configuration of DNSmasq for a DHCP.
 
 apt-get install dnsmasq
 
 nano /etc/dnsmasq.conf
 
-nano -w /etc/sysctl.conf
+# Edit /etc/dnsmasq.conf and add these lines at the end :
 
-Change
- 
-#net.ipv4.ip_forward=1
- 
-to
- 
-net.ipv4.ip_forward=1
+interface=tap_tapvpn
+dhcp-range=tap_tapvpn,192.168.7.50,192.168.7.60,12h
+dhcp-option=tap_tapvpn,3,192.168.7.1
+port=0 
+dhcp-option=option:dns-server,208.67.222.222,208.67.220.220
+
+# Add the file ipv4_forwarding.conf in the directory /etc/sysctl.d/ with the line net.ipv4.ip_forward = 1, just copy and paste the below line, it will create the file automatically :
+
+echo 'net.ipv4.ip_forward = 1' > /etc/sysctl.d/ipv4_forwarding.conf
+
+(to check) nano -w /etc/sysctl.d/ipv4_forwarding.conf
+
+# Type the command to enable it :
+sysctl --system
+
+# Restart VPNserver & DNSmasq service :
+
+service dnsmasq restart && service vpnserver restart
