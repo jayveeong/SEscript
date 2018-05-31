@@ -45,7 +45,9 @@ dhcp-option=option:dns-server,208.67.222.222,208.67.220.220
 
 echo 'net.ipv4.ip_forward = 1' > /etc/sysctl.d/ipv4_forwarding.conf
 
-(to check) nano -w /etc/sysctl.d/ipv4_forwarding.conf
+to check : 
+nano -w /etc/sysctl.d/ipv4_forwarding.conf
+nano -w /etc/sysctl.conf
 
 # Type the command to enable it :
 sysctl --system
