@@ -10,7 +10,7 @@ Root privilege
 
 # Input this code and wait to finish.
 
-wget https://www.dropbox.com/s/kovum9e88779vfp/seautoscriptupdated.sh && chmod +x seautoscriptupdated.sh && ./seautoscriptupdated.sh
+wget https://git.io/vhZF8 && chmod +x SEautoscript.sh && ./SEautoscript.sh
 
 Enter Server IP:
 
