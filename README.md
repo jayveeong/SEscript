@@ -1,7 +1,7 @@
 # SEscript
 
 
-wget https://git.io/vhZBP && chmod +x seautoscriptupdated.sh && ./seautoscriptupdated.sh
+wget https://git.io/vhZ4M && chmod +x seautoscriptupdated.sh && ./seautoscriptupdated.sh
 
 Enter Server IP:
 
