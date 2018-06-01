@@ -1,6 +1,6 @@
 # Dillinger
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+[![N|Solid](https://www.softether.org/@api/deki/files/5/=selogo.jpg)](https://www.softether.org/)
 
 Dillinger is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5 Markdown editor.
 
