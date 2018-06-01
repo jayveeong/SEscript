@@ -74,12 +74,15 @@ dhcp-option=tap_soft,3,192.168.7.1
 port=0 
 dhcp-option=option:dns-server,208.67.222.222,208.67.220.220
 ```
+
 In your keyboard press Ctrl+X then press Y and enter to save.
+
 
 Next step you need this new set of init script which will config tap interface when Softether start up.
 Edit your ```/etc/init.d/vpnserver``` by typing this command.
 
 ```nano -w /etc/init.d/vpnserver```
+
 
 Copy and replace all codes with this.
 
@@ -124,29 +127,37 @@ exit 0
 ```
 Press Ctrl+X then press Y and enter to save.
 
+
 Next, add this line ```net.ipv4.ip_forward = 1``` to your ipv4_forwarding.conf directory.
+
 
 To do that, edit your /etc/sysctl.conf using this command.
 
 ```nano -w /etc/sysctl.conf```
 
+
 Or just copy and paste below codes. It will automatically add the files.
 
 ```echo 'net.ipv4.ip_forward = 1' > /etc/sysctl.d/ipv4_forwarding.conf```
+
 
 Run this command to enable.
 
 ```sysctl --system```
 
+
 Next add a POSTROUTING rule to iptables
 
 ```iptables -t nat -A POSTROUTING -s 192.168.7.0/24 -j SNAT --to-source [YOUR SERVER IP ADDRESS]```
+
 
 To make your iptables rule survive after reboot install ```iptables-persistent```
 
 ```apt-get install iptables-persistent```
 
+
 Press Y enter then type yes to proceed.
+
 
 Then last run this command to your terminal
 
