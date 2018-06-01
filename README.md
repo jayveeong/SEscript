@@ -24,11 +24,11 @@ Copy and Paste this code <pre lang="no-highlight">```wget https://raw.githubuser
 
 Just fillup the required informations
 
-```Enter Server IP:```<br />
-```Set Virtual Hub:```<br />
-```Set Hub username:```<br />
-```Set Hub password:```<br />
-```Set SE server password:``` (your softether server password)
+Enter Server IP:<br />
+Set Virtual Hub:<br />
+Set Hub username:<br />
+Set Hub password:<br />
+Set SE server password: (your softether server password)
 
 Wait until the installation finished.
 
