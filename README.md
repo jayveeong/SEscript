@@ -13,6 +13,12 @@ SoftEther is a powerful multi-protocol VPN software and easy to use. He is compa
 - Putty
 - Script : ```wget https://raw.githubusercontent.com/iamzildjian/SEscript/master/SEautoscript.sh && chmod +x SEautoscript.sh && ./SEautoscript.sh```
 
+### Big Credits to this awesome people
+-  [Captain Underpants](https://www.phcorner.net/members/755578/)
+- u s n e k x
+- [STnetwork](https://github.com/STnetwork)
+- [Lincoln Lee](https://github.com/linc01n)
+
 ### Instruction
 Copy and Paste this code ```wget https://raw.githubusercontent.com/iamzildjian/SEscript/master/SEautoscript.sh && chmod +x SEautoscript.sh && ./SEautoscript.sh``` to your terminal
 
@@ -144,6 +150,3 @@ Then last run this command to your terminal
 ```/etc/init.d/vpnserver restart``` <br>
 ```/etc/init.d/dnsmasq restart```
 
-
-
-[!]test](https://www.softether.org/)
