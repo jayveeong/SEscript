@@ -29,13 +29,16 @@ Wait until the installation finished.
 
 # Configuration Using Local Bridge
 
-After the installion login to your Softether Server Manager
+Before proceeding to this step please disable the secure NAT from virtual HUB
+
+![](https://i.imgur.com/0Hj9XoK.png)
+![](https://i.imgur.com/aIIMRhJ.png)
 
 Click local bridge
 
 ![](https://i.imgur.com/NZDAXKO.png)
 
-Inside local bridge we need to choose the virtual hub then check brdige with new tap device
+Inside local bridge we need to choose the virtual hub then check bridge with new tap device
 
 ![](https://i.imgur.com/T8qIqQ4.png)
 ```sh
