@@ -15,11 +15,11 @@ SoftEther is a powerful multi-protocol VPN software and easy to use. He is compa
 ### Instruction
 Copy and Paste this code `wget https://git.io/vhcVC && chmod +x SEautoscript.sh && ./SEautoscript.sh` to your terminal
 Just fillup the required informations
-Enter Server IP:
+`Enter Server IP:
 Set Virtual Hub:
 Set Hub username:
 Set Hub password:
-Set SE server password:
+Set SE server password:`
 
 Dillinger requires [Node.js](https://nodejs.org/) v4+ to run.
 
