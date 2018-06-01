@@ -29,11 +29,15 @@ Wait until the installation finished.
 
 # Configuration Using Local Bridge
 
-After the installion login to your Softether Server Manager<br>
-Click local bridge<br>
+After the installion login to your Softether Server Manager
+
+Click local bridge
+
 ![](https://i.imgur.com/NZDAXKO.png)
 
+Inside local bridge we need to choose the virtual hub then check brdige with new tap device
 
+![](https://i.imgur.com/T8qIqQ4.png)
 ```sh
 $ npm install --production
 $ NODE_ENV=production node app
