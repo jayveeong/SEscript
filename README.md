@@ -1,59 +1,87 @@
-# SEscript
+# Project Title
 
-# Prerequisites.
+One Paragraph of project description goes here
 
-Virtual Private Server
+## Getting Started
 
-Ubuntu 16.04 x64 or Debian 8.10 x64
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-Root privilege
+### Prerequisites
 
-# Input this code and wait to finish.
+What things you need to install the software and how to install them
 
-wget https://git.io/vhZF8 && chmod +x SEautoscript.sh && ./SEautoscript.sh
+```
+Give examples
+```
 
-Enter Server IP:
+### Installing
 
-Set Virtual Hub:
+A step by step series of examples that tell you how to get a development env running
 
-Set Hub username:
+Say what the step will be
 
-Set Hub password:
+```
+Give the example
+```
 
-Set SE server password:
+And repeat
 
+```
+until finished
+```
 
-# Installation & Configuration of DNSmasq for a DHCP.
+End with an example of getting some data out of the system or using it for a little demo
 
-apt-get install dnsmasq
+## Running the tests
 
-nano /etc/dnsmasq.conf
+Explain how to run the automated tests for this system
 
-# Edit /etc/dnsmasq.conf and add these lines at the end :
+### Break down into end to end tests
 
-interface=tap_tapvpn
+Explain what these tests test and why
 
-dhcp-range=tap_tapvpn,192.168.7.50,192.168.7.60,12h
+```
+Give an example
+```
 
-dhcp-option=tap_tapvpn,3,192.168.7.1
+### And coding style tests
 
-port=0 
+Explain what these tests test and why
 
-dhcp-option=option:dns-server,208.67.222.222,208.67.220.220
+```
+Give an example
+```
 
-# Add the file ipv4_forwarding.conf in the directory /etc/sysctl.d/ with the line net.ipv4.ip_forward = 1, just copy and paste the below line, it will create the file automatically :
+## Deployment
 
-echo 'net.ipv4.ip_forward = 1' > /etc/sysctl.d/ipv4_forwarding.conf
+Add additional notes about how to deploy this on a live system
 
-to check : 
+## Built With
 
-nano -w /etc/sysctl.d/ipv4_forwarding.conf
+* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Maven](https://maven.apache.org/) - Dependency Management
+* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
-nano -w /etc/sysctl.conf
+## Contributing
 
-# Type the command to enable it :
-sysctl --system
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-# Restart VPNserver & DNSmasq service :
+## Versioning
 
-service dnsmasq restart && service vpnserver restart
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+
+## Authors
+
+* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Hat tip to anyone whose code was used
+* Inspiration
+* etc
