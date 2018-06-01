@@ -25,7 +25,7 @@ Just fillup the required informations
 
 Wait until the installation finished.
 
-![](https://pandao.github.io/editor.md/examples/images/4.jpg)
+![](https://i.imgur.com/l7C2Ues.png)
 
  :editormd-logo-5x:
 
