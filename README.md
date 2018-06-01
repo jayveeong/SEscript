@@ -162,6 +162,8 @@ Next add a POSTROUTING rule to iptables
 ```iptables -t nat -A POSTROUTING -s 192.168.7.0/24 -j SNAT --to-source [YOUR SERVER IP ADDRESS]```
 
 
+![](https://i.imgur.com/fuLKeAT.png)
+
 To make your iptables rule survive after reboot install ```iptables-persistent```
 
 ```apt-get install iptables-persistent```
