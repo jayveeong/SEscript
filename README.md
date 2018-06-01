@@ -124,6 +124,24 @@ Or just copy and paste below codes. It will automatically add the files.
 
 ```echo 'net.ipv4.ip_forward = 1' > /etc/sysctl.d/ipv4_forwarding.conf```
 
+Apply the sysctl run using this command
+
+```sysctl --system```
+
+Next add a POSTROUTING rule to iptables
+
+iptables -t nat -A POSTROUTING -s 192.168.7.0/24 -j SNAT --to-source [YOUR SERVER IP ADDRESS]
+
+To make your iptables rule survive after reboot install ```iptables-persistent```
+
+```apt-get install iptables-persistent```
+
+Then last run this command to your terminal
+
+```/etc/init.d/vpnserver restart``` <br>
+```/etc/init.d/dnsmasq restart```
+
+
 ### Plugins
 
 Dillinger is currently extended with the following plugins. Instructions on how to use them in your own application are linked below.
