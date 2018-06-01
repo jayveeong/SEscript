@@ -81,7 +81,7 @@ Edit your ```/etc/init.d/vpnserver``` by typing this command.
 
 ```nano -w /etc/init.d/vpnserver```
 
-Replace all with this
+Copy and replace all codes with this.
 
 ```#!/bin/sh
 ### BEGIN INIT INFO
