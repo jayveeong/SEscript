@@ -21,7 +21,11 @@ Just fillup the required informations
 ```Set Virtual Hub:```<br />
 ```Set Hub username:```<br />
 ```Set Hub password:```<br />
-```Set SE server password``` (your softether server password)
+```Set SE server password:``` (your softether server password)
+
+Wait until the installation finished.
+
+![](https://pandao.github.io/editor.md/examples/images/4.jpg)
 
 Dillinger requires [Node.js](https://nodejs.org/) v4+ to run.
 
