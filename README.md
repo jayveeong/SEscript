@@ -150,6 +150,8 @@ Or just copy and paste below codes. It will automatically add the files.
 ```echo 'net.ipv4.ip_forward = 1' > /etc/sysctl.d/ipv4_forwarding.conf```
 
 
+![](https://i.imgur.com/RF3SPwu.png)
+
 Run this command to enable.
 
 ```sysctl --system```
