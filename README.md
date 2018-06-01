@@ -145,4 +145,4 @@ Then last run this command to your terminal
 
 
 
-[![N|Solid]test](https://www.softether.org/)
+[!]test](https://www.softether.org/)
