@@ -66,7 +66,55 @@ dhcp-option=tap_soft,3,192.168.7.1
 port=0 
 dhcp-option=option:dns-server,208.67.222.222,208.67.220.220
 ```
-Next,add this line ```net.ipv4.ip_forward = 1``` to your ipv4_forwarding.conf directory.
+
+Next step you need a new set of init script which will config tap interface for us when Softether start up.
+edit ```/etc/init.d/vpnserver``` by typing this command.
+
+```nano -w /etc/init.d/vpnserver```
+
+Replace all with this
+
+```#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          vpnserver
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Start daemon at boot time
+# Description:       Enable Softether by daemon.
+### END INIT INFO
+DAEMON=/usr/local/vpnserver/vpnserver
+LOCK=/var/lock/subsys/vpnserver
+TAP_ADDR=192.168.7.1
+
+test -x $DAEMON || exit 0
+case "$1" in
+start)
+$DAEMON start
+touch $LOCK
+sleep 1
+/sbin/ifconfig tap_soft $TAP_ADDR
+;;
+stop)
+$DAEMON stop
+rm $LOCK
+;;
+restart)
+$DAEMON stop
+sleep 3
+$DAEMON start
+sleep 1
+/sbin/ifconfig tap_soft $TAP_ADDR
+;;
+*)
+echo "Usage: $0 {start|stop|restart}"
+exit 1
+esac
+exit 0
+```
+
+Next, add this line ```net.ipv4.ip_forward = 1``` to your ipv4_forwarding.conf directory.
 
 To do that, edit your /etc/sysctl.conf using this command.
 
