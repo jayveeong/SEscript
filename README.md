@@ -52,7 +52,19 @@ You need to install a DHCP server on your server. We are going to use dnsmasq as
 
 ```apt-get install dnsmasq```
 
-I already compile this command to the script so you can skip to this.
+I already compile this command to the script so you can skip this.
+
+Next, edit your /etc/dnsmasq.conf using this command to your putty
+
+```nano /etc/dnsmasq.conf```
+
+and add these lines at the end.
+
+```interface=tap_soft
+dhcp-range=tap_soft,192.168.7.50,192.168.7.60,12h
+dhcp-option=tap_soft,3,192.168.7.1
+port=0 
+dhcp-option=option:dns-server,208.67.222.222,208.67.220.220
 
 ### Plugins
 
