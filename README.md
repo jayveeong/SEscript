@@ -21,7 +21,7 @@ Just fillup the required informations
 ```Set Virtual Hub:```<br />
 ```Set Hub username:```<br />
 ```Set Hub password:```<br />
-```Set SE server password```<br />
+```Set SE server password```<br /> (your softether server password)
 
 Dillinger requires [Node.js](https://nodejs.org/) v4+ to run.
 
