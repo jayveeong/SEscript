@@ -27,7 +27,7 @@ Wait until the installation finished.
 
 ![](https://pandao.github.io/editor.md/examples/images/4.jpg)
 
-<i class="fas fa-camera-retro"></i>
+ :editormd-logo-5x:
 
 Dillinger requires [Node.js](https://nodejs.org/) v4+ to run.
 
