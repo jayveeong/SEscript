@@ -179,7 +179,8 @@ Press Y enter and enter Yes 2 times to proceed.
 
 Then last run this commands to your terminal
 
-```/etc/init.d/vpnserver restart``` (wait for the server to restart)
+```/etc/init.d/vpnserver restart``` (wait for the server to restart) <br>
 ```/etc/init.d/dnsmasq restart```
+
 
 And you're done.
