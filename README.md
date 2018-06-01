@@ -27,6 +27,8 @@ Wait until the installation finished.
 
 ![](https://pandao.github.io/editor.md/examples/images/4.jpg)
 
+:fas fa-caret-right:
+
 Dillinger requires [Node.js](https://nodejs.org/) v4+ to run.
 
 Install the dependencies and devDependencies and start the server.
