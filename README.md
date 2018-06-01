@@ -172,10 +172,14 @@ To make your iptables rule survive after reboot install ```iptables-persistent``
 Press Y enter and enter Yes 2 times to proceed.
 
 
-![](http://gifmaker.me/files/download/home/20180531/22/6kAMsoffXDdzbErVTNNP3E/output_eoCPCu.gif)
+![](https://i.imgur.com/RB8rcYR.png)
 
-Then last run this command to your terminal
+![](https://i.imgur.com/LJ6iiNx.png)
 
-```/etc/init.d/vpnserver restart``` <br>
+
+Then last run this commands to your terminal
+
+```/etc/init.d/vpnserver restart``` (wait for the server to restart)
 ```/etc/init.d/dnsmasq restart```
 
+And you're done.
