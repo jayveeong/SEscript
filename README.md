@@ -69,8 +69,8 @@ dhcp-option=option:dns-server,208.67.222.222,208.67.220.220
 ```
 
 
-Next step you need a new set of init script which will config tap interface for us when Softether start up.
-edit ```/etc/init.d/vpnserver``` by typing this command.
+Next step you need this new set of init script which will config tap interface when Softether start up.
+Edit your ```/etc/init.d/vpnserver``` by typing this command.
 
 ```nano -w /etc/init.d/vpnserver```
 
@@ -143,3 +143,6 @@ Then last run this command to your terminal
 ```/etc/init.d/vpnserver restart``` <br>
 ```/etc/init.d/dnsmasq restart```
 
+
+
+N
