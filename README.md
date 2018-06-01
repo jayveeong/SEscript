@@ -3,13 +3,9 @@
 [![N|Solid](https://www.softether.org/@api/deki/files/5/=selogo.jpg)](https://www.softether.org/)
 
 
-<pre lang="no-highlight"><code>&gt; Blockquotes are very handy in email to emulate reply text.
-&gt; This line is part of the same quote.
+<code>&gt; Blockquotes are very handy in email to emulate reply text.
+&gt; This line is part of the same quote.</code>
 
-Quote break.
-
-&gt; This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. 
-</code></pre>
 
 
 SoftEther is a powerful multi-protocol VPN software and easy to use. He is compatible with all operatins systems (Windows, Linux, Mac, FreeBSD, Solaris...). A very good thing with SoftEther is that it is an open source, so we can use it for any personal or commercial use for free charge without limitation in connections. It is compatible with OpenVPN, L2TP/IPsec, SSTP protocols. SoftEther has also his own protocol VPN that is faster than OpenVPN, L2TP/IPsec and SSTP protocols.
