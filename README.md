@@ -36,6 +36,9 @@ Wait until the installation finished.
 
 # Configuration Using Local Bridge
 
+In this step we are not going to use SecureNAT and SecureDHCP. Instead, we are going to use dnsmasq as our DHCP server.
+
+
 After the installation of the script you should disable the secure NAT from virtual HUB as the script enable it automatically.
 
 
