@@ -1,23 +1,14 @@
-# Dillinger
+# Softether
 
 [![N|Solid](https://www.softether.org/@api/deki/files/5/=selogo.jpg)](https://www.softether.org/)
 
-Dillinger is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5 Markdown editor.
+SoftEther is a powerful multi-protocol VPN software and easy to use. He is compatible with all operatins systems (Windows, Linux, Mac, FreeBSD, Solaris...). A very good thing with SoftEther is that it is an open source, so we can use it for any personal or commercial use for free charge without limitation in connections. It is compatible with OpenVPN, L2TP/IPsec, SSTP protocols. SoftEther has also his own protocol VPN that is faster than OpenVPN, L2TP/IPsec and SSTP protocols.
+# Softether Auto Script 
 
-  - Type some Markdown on the left
-  - See HTML in the right
-  - Magic
-
-# New Features!
-
-  - Import a HTML file and watch it magically convert to Markdown
-  - Drag and drop images (requires your Dropbox account be linked)
-
-
-You can also:
-  - Import and save files from GitHub, Dropbox, Google Drive and One Drive
-  - Drag and drop markdown and HTML files into Dillinger
-  - Export documents as Markdown, HTML and PDF
+- Virtual Private Server
+- Ubuntu 16.04 x64 or Debian 8.10 x64
+- Root privilege
+- Putty
 
 Markdown is a lightweight markup language based on the formatting conventions that people naturally use in email.  As [John Gruber] writes on the [Markdown site][df1]
 
