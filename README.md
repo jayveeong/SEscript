@@ -27,14 +27,12 @@ Wait until the installation finished.
 
 ![](https://i.imgur.com/l7C2Ues.png)
 
+# Configuration Using Local Bridge
 
-```sh
-$ cd dillinger
-$ npm install -d
-$ node app
-```
+After the installion login to your Softether Server Manager<br>
+Click local bridge<br>
+![](https://i.imgur.com/NZDAXKO.png)
 
-For production environments...
 
 ```sh
 $ npm install --production
