@@ -169,8 +169,10 @@ To make your iptables rule survive after reboot install ```iptables-persistent``
 ```apt-get install iptables-persistent```
 
 
-Press Y enter then type yes to proceed.
+Press Y enter and enter Yes 2 times to proceed.
 
+
+![](http://gifmaker.me/files/download/home/20180531/22/6kAMsoffXDdzbErVTNNP3E/output_eoCPCu.gif)
 
 Then last run this command to your terminal
 
