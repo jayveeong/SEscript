@@ -27,7 +27,7 @@ Wait until the installation finished.
 
 ![](https://pandao.github.io/editor.md/examples/images/4.jpg)
 
-:fas fa-caret-right:
+<i class="far fa-hand-point-right"></i>
 
 Dillinger requires [Node.js](https://nodejs.org/) v4+ to run.
 
