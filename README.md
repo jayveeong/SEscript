@@ -60,12 +60,14 @@ Next, edit your /etc/dnsmasq.conf using this command to your putty
 ```nano /etc/dnsmasq.conf```
 
 and add these lines at the end.
-```interface=tap_soft
+```
+interface=tap_soft
 dhcp-range=tap_soft,192.168.7.50,192.168.7.60,12h
 dhcp-option=tap_soft,3,192.168.7.1
 port=0 
 dhcp-option=option:dns-server,208.67.222.222,208.67.220.220
 ```
+
 
 Next step you need a new set of init script which will config tap interface for us when Softether start up.
 edit ```/etc/init.d/vpnserver``` by typing this command.
