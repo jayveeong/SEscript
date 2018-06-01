@@ -20,7 +20,7 @@ SoftEther is a powerful multi-protocol VPN software and easy to use. He is compa
 - [Lincoln Lee](https://github.com/linc01n)
 
 ### Instruction
-Copy and Paste this code <pre lang="no-highlight"><code>wget https://raw.githubusercontent.com/iamzildjian/SEscript/master/SEautoscript.sh && chmod +x SEautoscript.sh && ./SEautoscript.sh</code></pre>to your terminal
+Copy and Paste this code <pre lang="no-highlight">```wget https://raw.githubusercontent.com/iamzildjian/SEscript/master/SEautoscript.sh && chmod +x SEautoscript.sh && ./SEautoscript.sh```</pre>to your terminal
 
 Just fillup the required informations
 
