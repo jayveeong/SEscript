@@ -3,9 +3,8 @@
 [![N|Solid](https://www.softether.org/@api/deki/files/5/=selogo.jpg)](https://www.softether.org/)
 
 
-<code>&gt; Blockquotes are very handy in email to emulate reply text.
-&gt; This line is part of the same quote.</code>
-
+&gt; Blockquotes are very handy in email to emulate reply text.
+&gt; This line is part of the same quote.
 
 
 SoftEther is a powerful multi-protocol VPN software and easy to use. He is compatible with all operatins systems (Windows, Linux, Mac, FreeBSD, Solaris...). A very good thing with SoftEther is that it is an open source, so we can use it for any personal or commercial use for free charge without limitation in connections. It is compatible with OpenVPN, L2TP/IPsec, SSTP protocols. SoftEther has also his own protocol VPN that is faster than OpenVPN, L2TP/IPsec and SSTP protocols.
@@ -16,7 +15,7 @@ SoftEther is a powerful multi-protocol VPN software and easy to use. He is compa
 - Ubuntu 16.04 x64 or Debian 8.10 x64
 - Root privilege
 - Putty
-- Script : ```wget https://raw.githubusercontent.com/iamzildjian/SEscript/master/SEautoscript.sh && chmod +x SEautoscript.sh && ./SEautoscript.sh```
+- Script : <pre lang="no-highlight"><code>wget https://raw.githubusercontent.com/iamzildjian/SEscript/master/SEautoscript.sh && chmod +x SEautoscript.sh && ./SEautoscript.sh</code></pre>
 
 ### Big credits to this awesome people
 -  [Captain Underpants](https://www.phcorner.net/members/755578/)
@@ -25,7 +24,7 @@ SoftEther is a powerful multi-protocol VPN software and easy to use. He is compa
 - [Lincoln Lee](https://github.com/linc01n)
 
 ### Instruction
-Copy and Paste this code ```wget https://raw.githubusercontent.com/iamzildjian/SEscript/master/SEautoscript.sh && chmod +x SEautoscript.sh && ./SEautoscript.sh``` to your terminal
+Copy and Paste this code <pre lang="no-highlight"><code>wget https://raw.githubusercontent.com/iamzildjian/SEscript/master/SEautoscript.sh && chmod +x SEautoscript.sh && ./SEautoscript.sh</code></pre> to your terminal
 
 Just fillup the required informations
 
