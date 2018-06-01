@@ -81,6 +81,9 @@ port=0
 dhcp-option=option:dns-server,208.67.222.222,208.67.220.220
 ```
 
+![](https://i.imgur.com/sEoQKCt.png)
+
+
 In your keyboard press Ctrl+X then press Y and enter to save.
 
 
