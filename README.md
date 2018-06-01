@@ -2,12 +2,12 @@
 
 [![N|Solid](https://www.softether.org/@api/deki/files/5/=selogo.jpg)](https://www.softether.org/)
 
-[John Gruber]
+
 SoftEther is a powerful multi-protocol VPN software and easy to use. He is compatible with all operatins systems (Windows, Linux, Mac, FreeBSD, Solaris...). A very good thing with SoftEther is that it is an open source, so we can use it for any personal or commercial use for free charge without limitation in connections. It is compatible with OpenVPN, L2TP/IPsec, SSTP protocols. SoftEther has also his own protocol VPN that is faster than OpenVPN, L2TP/IPsec and SSTP protocols.
 # Softether Auto Installation
 
 ### Prerequisites
-- Virtual Private Server
+- Virtual Private Server [DigitalOcean](http://digitalocean.com), [AWS](https://aws.amazon.com), [Google Cloud](https://cloud.google.com/)
 - Ubuntu 16.04 x64 or Debian 8.10 x64
 - Root privilege
 - Putty
