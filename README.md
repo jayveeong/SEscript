@@ -42,9 +42,17 @@ Inside local bridge choose the virtual hub then check bridge with new tap device
 
 ![](https://i.imgur.com/T8qIqQ4.png)
 
+#Installation & Configuration of DNSmasq for a DHCP.
+
 After configuring the local bridge go back to your putty and run this command.
 
 ```ifconfig tap_soft```
+
+You need to install a DHCP server on your server. We are going to use dnsmasq as our DHCP server.
+
+```apt-get install dnsmasq```
+
+I already compile this command to the script so you can skip to this.
 
 ### Plugins
 
