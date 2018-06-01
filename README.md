@@ -44,13 +44,16 @@ Inside local bridge choose the virtual hub then check bridge with new tap device
 
 # Installation & Configuration of DNSmasq for a DHCP.
 
+
 After configuring the local bridge go back to your putty and run this command.
 
 ```ifconfig tap_soft```
 
+
 You need to install a DHCP server on your server. We are going to use dnsmasq as our DHCP server.
 
 ```apt-get install dnsmasq```
+
 
 Next, edit your /etc/dnsmasq.conf using this command to your putty
 
@@ -62,7 +65,7 @@ dhcp-range=tap_soft,192.168.7.50,192.168.7.60,12h
 dhcp-option=tap_soft,3,192.168.7.1
 port=0 
 dhcp-option=option:dns-server,208.67.222.222,208.67.220.220
-
+```
 Next,add this line ```net.ipv4.ip_forward = 1``` to your ipv4_forwarding.conf directory.
 
 To do that, edit your /etc/sysctl.conf using this command.
