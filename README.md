@@ -184,3 +184,6 @@ Then last run this commands to your terminal
 
 
 And you're done.
+
+
+![](https://i.imgur.com/on1XcuP.png)
