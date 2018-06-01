@@ -38,13 +38,13 @@ After disabling secureNAT go to local bridge
 
 ![](https://i.imgur.com/NZDAXKO.png)
 
-Inside local bridge choose the virtual hub then check bridge with new tap device
+Inside local bridge choose the virtual hub then check bridge with new tap device, create and exit.
 
 ![](https://i.imgur.com/T8qIqQ4.png)
-```sh
-$ npm install --production
-$ NODE_ENV=production node app
-```
+
+After configuring the local bridge go back to your putty and run this command.
+
+```ifconfig tap_soft```
 
 ### Plugins
 
