@@ -11,7 +11,7 @@ SoftEther is a powerful multi-protocol VPN software and easy to use. He is compa
 - Ubuntu 16.04 x64 or Debian 8.10 x64
 - Root privilege
 - Putty
-- Script : <pre lang="no-highlight"><code>wget https://raw.githubusercontent.com/iamzildjian/SEscript/master/SEautoscript.sh && chmod +x SEautoscript.sh && ./SEautoscript.sh</code></pre>
+- Script : <pre lang="no-highlight">```wget https://raw.githubusercontent.com/iamzildjian/SEscript/master/SEautoscript.sh && chmod +x SEautoscript.sh && ./SEautoscript.sh```</pre>
 
 ### Big credits to this awesome people
 -  [Captain Underpants](https://www.phcorner.net/members/755578/)
