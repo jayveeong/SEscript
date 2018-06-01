@@ -146,6 +146,8 @@ To make your iptables rule survive after reboot install ```iptables-persistent``
 
 ```apt-get install iptables-persistent```
 
+Press Y enter then type yes to proceed.
+
 Then last run this command to your terminal
 
 ```/etc/init.d/vpnserver restart``` <br>
