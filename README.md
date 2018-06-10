@@ -68,7 +68,7 @@ Click create local bridge then exit.
 # Installation & Configuration of DNSmasq for a DHCP.
 
 
-After configuring the local bridge go back to your putty and run this command.
+After configuring the local bridge go back to your terminal and run this command.
 
 ```ifconfig tap_soft```
 
