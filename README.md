@@ -74,7 +74,7 @@ After configuring the local bridge go back to your terminal and run this command
 ```ifconfig tap_soft```
 
 
-You need to install a DHCP server on your server. We are going to use dnsmasq as our DHCP server.
+You need to install a DHCP server on your server. So we are going to use dnsmasq as our DHCP server.
 
 ```apt-get install dnsmasq```
 
@@ -156,19 +156,19 @@ To do that, edit your /etc/sysctl.conf using this command.
 ```nano -w /etc/sysctl.conf```
 
 
-Or just copy and paste below codes. It will automatically add the files.
+Or just copy and paste below codes. It will automatically add the line.
 
 ```echo 'net.ipv4.ip_forward = 1' > /etc/sysctl.d/ipv4_forwarding.conf```
 
 
 ![](https://i.imgur.com/RF3SPwu.png)
 
-Run this command to enable.
+Now run this command to enable.
 
 ```sysctl --system```
 
 
-Next add a POSTROUTING rule to iptables
+Next add a POSTROUTING rule to iptables. 
 
 ```iptables -t nat -A POSTROUTING -s 192.168.7.0/24 -j SNAT --to-source [YOUR SERVER IP ADDRESS]```
 
@@ -188,7 +188,7 @@ Type Y and enter then choose Yes 2 times to proceed by pressing enter key.
 ![](https://i.imgur.com/LJ6iiNx.png)
 
 
-Then last, run this commands to your terminal
+Then last, run this commands to your terminal one at a time.
 
 ```/etc/init.d/vpnserver restart``` (wait for the server to restart) <br>
 ```/etc/init.d/dnsmasq restart```
