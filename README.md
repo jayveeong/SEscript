@@ -12,7 +12,7 @@ SoftEther is a powerful multi-protocol VPN software and easy to use. He is compa
 - Ubuntu 16.04 x64 or Debian 8.10 x64
 - Root privilege
 - Putty
-- Script made by u s n e k x
+- Auto Script
 
 
 ### Big credits to this awesome people
@@ -62,7 +62,7 @@ Inside local bridge choose the virtual hub name then check bridge with new tap d
 
 
 Now, for new tap device name you can put any name you want. But in my case i named it as "soft". 
-Click create then exit. 
+Click create local bridge then exit. 
 
 
 # Installation & Configuration of DNSmasq for a DHCP.
