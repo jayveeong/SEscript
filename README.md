@@ -78,7 +78,7 @@ You need to install a DHCP server on your server. We are going to use dnsmasq as
 ```apt-get install dnsmasq```
 
 
-Next, edit your /etc/dnsmasq.conf using this command to your putty
+Next, edit your /etc/dnsmasq.conf using this command. 
 
 ```nano /etc/dnsmasq.conf```
 
@@ -94,7 +94,7 @@ dhcp-option=option:dns-server,208.67.222.222,208.67.220.220
 ![](https://i.imgur.com/sEoQKCt.png)
 
 
-In your keyboard press Ctrl+X then press Y and enter to save.
+In your keyboard press ctrl+X then press Y and enter to save.
 
 
 Next step you need this new set of init script which will config tap interface when Softether start up.
@@ -174,12 +174,12 @@ Next add a POSTROUTING rule to iptables
 
 ![](https://i.imgur.com/fuLKeAT.png)
 
-To make your iptables rule survive after reboot install ```iptables-persistent```
+To make the iptables rule survive after reboot you need to install ```iptables-persistent```
 
 ```apt-get install iptables-persistent```
 
 
-Press Y enter and enter Yes 2 times to proceed.
+Press Y to enter then enter Yes 2 times to proceed.
 
 
 ![](https://i.imgur.com/RB8rcYR.png)
