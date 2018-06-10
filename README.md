@@ -62,8 +62,8 @@ Inside local bridge choose the virtual hub name then check bridge with new tap d
 ![](https://i.imgur.com/T8qIqQ4.png)
 
 
-Now, for new tap device name you can put any name you want. But in my case i named it as "soft". 
-Click create local bridge then exit. 
+Now, for new tap device name you can put any name that you want. But in my case i named it as "soft". 
+After that click create local bridge and exit. 
 
 
 # Installation & Configuration of DNSmasq for a DHCP.
