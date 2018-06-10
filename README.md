@@ -42,7 +42,7 @@ Wait until the installation finished.
 In this step we are not going to use SecureNAT and SecureDHCP. Instead, we are going to use dnsmasq as our DHCP server.
 
 
-After the installation of the script you should disable the secure NAT from virtual NAT as the script enable it automatically.
+After the installation of the script you should disable the secure NAT inside the virtual NAT and virtual DHCP server as the script enable it automatically.
 
 
 ![](https://i.imgur.com/0Hj9XoK.png)
