@@ -55,12 +55,13 @@ After disabling secureNAT go to local bridge
 ![](https://i.imgur.com/NZDAXKO.png)
 
 
-Inside local bridge choose the virtual hub then check bridge with new tap device, create and exit.
+Inside local bridge choose the virtual hub name then check bridge with new tap device. 
 
 
 ![](https://i.imgur.com/T8qIqQ4.png)
 
 
+Then 
 # Installation & Configuration of DNSmasq for a DHCP.
 
 
