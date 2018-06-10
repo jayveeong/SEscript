@@ -50,7 +50,7 @@ After the installation of the script you should disable the secure NAT inside th
 ![](https://i.imgur.com/aIIMRhJ.png)
 
 
-After disabling secureNAT go to local bridge
+After disabling secureNAT go to local bridge settings. 
 
 
 ![](https://i.imgur.com/NZDAXKO.png)
