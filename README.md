@@ -94,7 +94,7 @@ dhcp-option=option:dns-server,208.67.222.222,208.67.220.220
 ![](https://i.imgur.com/sEoQKCt.png)
 
 
-In your keyboard press ctrl+X then press Y and enter to save.
+In your keyboard press ctrl+X then type Y and enter to save.
 
 
 Next step you need this new set of init script which will config tap interface when Softether start up.
@@ -144,7 +144,7 @@ exit 1
 esac
 exit 0
 ```
-Press Ctrl+X then press Y and enter to save.
+Press Ctrl+X then type Y and enter to save.
 
 
 Next, add this line ```net.ipv4.ip_forward = 1``` to your ipv4_forwarding.conf directory.
@@ -179,7 +179,7 @@ To make the iptables rule survive after reboot you need to install ```iptables-p
 ```apt-get install iptables-persistent```
 
 
-Press Y to enter then enter Yes 2 times to proceed.
+Type Y and enter then choose Yes 2 times to proceed by pressing enter key. 
 
 
 ![](https://i.imgur.com/RB8rcYR.png)
@@ -187,7 +187,7 @@ Press Y to enter then enter Yes 2 times to proceed.
 ![](https://i.imgur.com/LJ6iiNx.png)
 
 
-Then last run this commands to your terminal
+Then last, run this commands to your terminal
 
 ```/etc/init.d/vpnserver restart``` (wait for the server to restart) <br>
 ```/etc/init.d/dnsmasq restart```
