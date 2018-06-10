@@ -25,21 +25,22 @@ SoftEther is a powerful multi-protocol VPN software and easy to use. He is compa
 ### Instruction
 Copy and Paste this script <pre lang="no-highlight">```wget https://raw.githubusercontent.com/iamzildjian/SEscript/master/SEautoscript.sh && chmod +x SEautoscript.sh && ./SEautoscript.sh```</pre>into your terminal
 
+
 Just fillup the required informations
 
-Enter Server IP:<br />
+Enter Server IP:<br /> 
 Set Virtual Hub:<br />
 Set Hub username:<br />
 Set Hub password:<br />
-Set SE server password: (your softether server password)
+Set SE server password: (your softether server manager password)
 
-Wait until the installation finished.
+Wait for the installation to finish.
 
 ![](https://i.imgur.com/l7C2Ues.png)
 
 # Configuration Using Local Bridge
 
-In this step we are not going to use SecureNAT and SecureDHCP. Instead, we are going to use dnsmasq as our DHCP server.
+For this step we're not going to use SecureNAT and SecureDHCP. Instead, we are going to use dnsmasq as our DHCP server.
 
 
 After the installation of the script you should disable the secure NAT inside the virtual NAT and virtual DHCP server as the script enable it automatically.
