@@ -34,9 +34,12 @@ Set Hub username:<br />
 Set Hub password:<br />
 Set SE server password: (your softether server manager password)
 
-Wait for the installation to finish.
+Wait for the installation to finish and you're ready to go. 
 
 ![](https://i.imgur.com/l7C2Ues.png)
+
+If you wish to use local bridge connection, follow the the procedure below as the the above method configured as Snat. 
+
 
 # Configuration Using Local Bridge
 
