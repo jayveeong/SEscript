@@ -1,32 +1,15 @@
 #!/bin/bash
 clear
-echo "                                           "
-echo "                                           "
-echo " ████▓▓▓▓▓▓▓█████╬╬╬╬╬╬████╬╬╬╬╬╬╬╬╬╬╬╬██  "
-echo " ███▓▓▓▓▓▓▓▓▓▓▓██╬╬╬╬╬╬██╬╬╬╬╬╬╬╬╬╬╬╬╬╬██  "
-echo " ████▓▓▓▓▓▓▓▓▓▓▓██╬╬╬╬╬█╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬██  "
-echo " ███▓▓▓███████▓▓▓███╬╬╬╬╬╬█████████╬╬╬╬██  "
-echo " ███▓▓██████████▓▓██╬╬╬╬╬████████╬╬╬╬╬╬██  "
-echo " ███▓▓▓▓▓▓▓▓▓▓▓▓▓▓██╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬██  "
-echo " ████▓▓▓▓▓▓▓▓▓▓▓▓▓██╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬██  "
-echo " █████▓▓▓▓▓▓▓▓▓▓▓▓██╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬██  "
-echo " █████▓▓▓▓▓▓▓▓█▓▓▓██╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬██  "
-echo " █████▓▓▓▓▓▓▓██▓▓▓██╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬██  "
-echo " █████▓▓▓▓▓████▓▓▓██╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬██  "
-echo " ████▓▓▓▓▓▓██▓▓▓▓███╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬██  "
-echo " ████▓▓█▓▓▓▓▓▓▓▓▓███╬╬╬╬╬╬╬╬╬╬╬╬██╬╬╬╬███  "
-echo " █████▓██▓▓▓▓▓▓▓▓▓██████╬╬╬╬╬╬╬██╬╬╬╬╬███  "
-echo " █████▓▓█████▓▓▓████╬████╬╬╬████╬╬╬╬╬╬███  "
-echo " ██████▓▓▓▓████████╬╬╬████████╬╬╬╬╬╬╬████  "
-echo " ███████▓▓▓▓▓▓▓▓▓█████████╬╬╬╬╬╬╬╬╬╬╬████  "
-echo " ███████▓▓▓▓▓▓▓▓███╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬█████  "
-echo " ████████▓▓▓▓▓▓▓▓████╬╬╬╬╬╬╬╬╬╬╬╬╬╬██████  "
-echo " █████████▓▓▓▓▓▓▓▓▓███╬╬╬╬╬╬╬╬╬╬╬╬███████  "
-echo " ██████████▓▓▓▓▓▓▓▓▓██╬╬╬╬╬╬╬╬╬╬╬████████  "
-echo " ███████████▓▓▓▓▓▓▓███╬╬╬╬╬╬╬╬╬╬█████████  "
-echo "                                           "
-echo "               AUTO SCRIPT                 "
-echo "                                           "
+echo "                                                                 "
+echo "                                                                 "
+echo " _|    _|    _|_|_|  _|      _|  _|_|_|_|  _|    _|  _|      _|  "
+echo " _|    _|  _|        _|_|    _|  _|        _|  _|      _|  _|    "
+echo " _|    _|    _|_|    _|  _|  _|  _|_|_|    _|_|          _|      "
+echo " _|    _|        _|  _|    _|_|  _|        _|  _|      _|  _|    "
+echo "   _|_|    _|_|_|    _|      _|  _|_|_|_|  _|    _|  _|      _|  "
+echo "                                                                 "
+echo "                        AUTO SCRIPT                              "
+echo "                                                                 "
 echo " "
 
 HOST=""
@@ -54,14 +37,36 @@ echo " "
 echo "Now sit back and wait until the installation finished."
 echo " "
 
-sudo apt-get -y update && sudo apt-get -y upgrade && apt-get install expect -y
-sudo apt-get install checkinstall build-essential -y
-apt-get install dnsmasq
+
+apt-get -y update && apt-get -y upgrade && apt-get -y install nano && apt-get -y install wget && apt-get -y install vim
+
+apt-get -y install wget curl gcc make wget tzdata git libreadline-dev libncurses-dev libssl-dev zlib1g-dev
+
+apt-get install upstart
+
+apt-get install checkinstall build-essential -y
+
 wget http://www.softether-download.com/files/softether/v4.27-9666-beta-2018.04.21-tree/Linux/SoftEther_VPN_Server/64bit_-_Intel_x64_or_AMD64/softether-vpnserver-v4.27-9666-beta-2018.04.21-linux-x64-64bit.tar.gz
-tar -xzf softether-vpnserver-v4.27-9666-beta-2018.04.21-linux-x64-64bit.tar.gz
-rm -rf softether-vpnserver-v4.27-9666-beta-2018.04.21-linux-x64-64bit.tar.gz
-cd /root/vpnserver && expect -c 'spawn make; expect number:; send 1\r; expect number:; send 1\r; expect number:; send 1\r; interact'
-cd && mv vpnserver/ /usr/local && chmod 600 * /usr/local/vpnserver/ && chmod 700 /usr/local/vpnserver/vpncmd && chmod 700 /usr/local/vpnserver/vpnserver
+
+tar xvfz softether-vpnserver-v4.27-9666-beta-2018.04.21-linux-x64-64bit.tar.gz
+
+cd
+ls -a
+cd vpnserver/
+ls -a
+make
+
+
+cd 
+mv vpnserver/ /usr/local/
+cd /usr/local/vpnserver/
+chmod 600 * /usr/local/vpnserver
+chmod 755 /usr/local/vpnserver/vpncmd
+chmod 755 /usr/local/vpnserver/vpnserver
+chmod +x vpnserver
+chmod +x vpncmd
+cd
+
 echo '#!/bin/sh
 # description: SoftEther VPN Server
 ### BEGIN INIT INFO
@@ -75,11 +80,14 @@ echo '#!/bin/sh
 ### END INIT INFO
 DAEMON=/usr/local/vpnserver/vpnserver
 LOCK=/var/lock/subsys/vpnserver
+TAP_ADDR=192.168.7.1
 test -x $DAEMON || exit 0
 case "$1" in
 start)
 $DAEMON start
 touch $LOCK
+sleep 1
+/sbin/ifconfig tap_tapvpn $TAP_ADDR
 ;;
 stop)
 $DAEMON stop
@@ -89,29 +97,40 @@ restart)
 $DAEMON stop
 sleep 3
 $DAEMON start
+sleep 1
+/sbin/ifconfig tap_tapvpn $TAP_ADDR
 ;;
 *)
 echo "Usage: $0 {start|stop|restart}"
 exit 1
-esac
-exit 0' > /etc/init.d/vpnserver
-###
-chmod 755 /etc/init.d/vpnserver && /etc/init.d/vpnserver start
-update-rc.d vpnserver defaults
-###
-echo net.ipv4.ip_forward = 1 >> /etc/sysctl.conf
-sysctl -w net.ipv4.ip_forward=1
-sysctl --system
-echo "nameserver 8.8.8.8" > "/etc/resolv.conf"
-echo "nameserver 8.8.4.4" >> "/etc/resolv.conf"
+esac' > /etc/init.d/vpnserver
 
-### SSH brute-force protection ### 
-iptables -A INPUT -p tcp --dport ssh -m conntrack --ctstate NEW -m recent --set 
-iptables -A INPUT -p tcp --dport ssh -m conntrack --ctstate NEW -m recent --update --seconds 60 --hitcount 10 -j DROP  
-### Protection against port scanning ### 
-iptables -N port-scanning 
-iptables -A port-scanning -p tcp --tcp-flags SYN,ACK,FIN,RST RST -m limit --limit 1/s --limit-burst 2 -j RETURN 
-iptables -A port-scanning -j DROP
+
+chmod 755 /etc/init.d/vpnserver
+update-rc.d vpnserver defaults
+update-rc.d vpnserver enable
+/etc/init.d/vpnserver start
+apt-get -y install dnsmasq
+
+echo 'interface = tap_tapvpn
+dhcp-range = tap_tapvpn, 192.168.7.50,192.168.7.60,12h
+dhcp-option = tap_tapvpn, 3,192.168.7.1' > /etc/dnsmasq.conf
+
+
+echo 'net.ipv4.ip_forward = 1' > /etc/sysctl.d/ipv4_forwarding.conf
+sysctl --system
+service dnsmasq restart && service vpnserver restart
+cd /usr/src/
+wget https://download.configserver.com/csf.tgz
+tar -xzf csf.tgz
+cd csf
+sh install.sh
+echo 'iptables -A FORWARD -m state --state RELATED,ESTABLISHED -j ACCEPT
+iptables -A FORWARD -s 192.168.7.0/24 -j ACCEPT
+iptables -A FORWARD -j REJECT
+iptables -t nat -A POSTROUTING -s 192.168.7.0/24 -j SNAT --to-source ${HOST}' > /etc/csf/csfpre.sh
+csf -r && service dnsmasq restart && service vpnserver restart
+
 
 HOST=${HOST}
 HUB_PASSWORD=${SE_PASSWORD}
@@ -124,9 +143,9 @@ ${TARGET}vpnserver/vpncmd localhost /SERVER /CMD ServerPasswordSet ${SE_PASSWORD
 ${TARGET}vpnserver/vpncmd localhost /SERVER /PASSWORD:${SE_PASSWORD} /CMD HubCreate ${HUB} /PASSWORD:${HUB_PASSWORD}
 ${TARGET}vpnserver/vpncmd localhost /SERVER /PASSWORD:${SE_PASSWORD} /HUB:${HUB} /CMD UserCreate ${USER} /GROUP:none /REALNAME:none /NOTE:none
 ${TARGET}vpnserver/vpncmd localhost /SERVER /PASSWORD:${SE_PASSWORD} /HUB:${HUB} /CMD UserPasswordSet ${USER} /PASSWORD:${USER_PASSWORD}
-${TARGET}vpnserver/vpncmd localhost /SERVER /PASSWORD:${SE_PASSWORD} /CMD IPsecEnable /L2TP:yes /L2TPRAW:yes /ETHERIP:no /PSK:Zildjian /DEFAULTHUB:${HUB}
+${TARGET}vpnserver/vpncmd localhost /SERVER /PASSWORD:${SE_PASSWORD} /CMD IPsecEnable /L2TP:yes /L2TPRAW:yes /ETHERIP:no /PSK:vpn /DEFAULTHUB:${HUB}
 ${TARGET}vpnserver/vpncmd localhost /SERVER /PASSWORD:${SE_PASSWORD} /CMD HubDelete DEFAULT
-${TARGET}vpnserver/vpncmd localhost /SERVER /PASSWORD:${SE_PASSWORD} /HUB:${HUB} /CMD SecureNatEnable
+${TARGET}vpnserver/vpncmd localhost /SERVER /PASSWORD:${SE_PASSWORD} /CMD BridgeCreate /DEVICE:"tapvpn" /TAP:yes ${HUB}
 ${TARGET}vpnserver/vpncmd localhost /SERVER /PASSWORD:${SE_PASSWORD} /CMD VpnOverIcmpDnsEnable /ICMP:yes /DNS:yes
 ${TARGET}vpnserver/vpncmd localhost /SERVER /PASSWORD:${SE_PASSWORD} /CMD ListenerCreate 53
 ${TARGET}vpnserver/vpncmd localhost /SERVER /PASSWORD:${SE_PASSWORD} /CMD ListenerCreate 137
@@ -145,5 +164,5 @@ echo "Username: ${USER}"
 echo "Password: ${SERVER_PASSWORD}"
 echo "Server Password: ${SE_PASSWORD}"
 echo " "
-echo "Please visit my github repository for local bridge + csf configuration"
-echo "Github link: https://git.io/vhca3"
+echo "Join us in TD's Discord Server"
+echo "Invitation link: https://discord.gg/2BCNNYg"
