@@ -79,7 +79,7 @@ After configuring the local bridge go back to your terminal and run this command
 
 You need to install a DHCP server on your server. So we are going to use dnsmasq as our DHCP server.
 
-```apt-get install dnsmasq```
+```apt-get -y install dnsmasq```
 
 
 Next, edit your /etc/dnsmasq.conf using this command. 
@@ -180,10 +180,10 @@ Next add a POSTROUTING rule to iptables.
 
 To make the iptables rule survive after reboot you need to install ```iptables-persistent```
 
-```apt-get install iptables-persistent```
+```apt-get -y install iptables-persistent```
 
 
-Type Y and enter then choose Yes 2 times to proceed by pressing enter key. 
+Choose Yes 2 times to proceed by pressing enter key. 
 
 
 ![](https://i.imgur.com/RB8rcYR.png)
@@ -191,10 +191,9 @@ Type Y and enter then choose Yes 2 times to proceed by pressing enter key.
 ![](https://i.imgur.com/LJ6iiNx.png)
 
 
-Then last, run this commands to your terminal one at a time.
+Then last, run this commands to restart your vpnserver and dhcp server.
 
-```/etc/init.d/vpnserver restart``` (wait for the server to restart) <br>
-```/etc/init.d/dnsmasq restart```
+```/etc/init.d/vpnserver restart && /etc/init.d/dnsmasq restart```
 
 
 And you're done.
