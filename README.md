@@ -186,8 +186,6 @@ To make the iptables rule survive after reboot you need to install ```iptables-p
 Choose Yes 2 times to proceed by pressing enter key. 
 
 
-![](https://i.imgur.com/RB8rcYR.png)
-
 ![](https://i.imgur.com/LJ6iiNx.png)
 
 
